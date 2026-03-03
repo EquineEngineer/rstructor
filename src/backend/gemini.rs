@@ -154,6 +154,7 @@ pub struct GeminiConfig {
 }
 
 /// Gemini client for generating completions
+#[derive(Clone)]
 pub struct GeminiClient {
     config: GeminiConfig,
     client: reqwest::Client,

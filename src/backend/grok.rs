@@ -134,6 +134,7 @@ pub struct GrokConfig {
 }
 
 /// Grok client for generating completions
+#[derive(Clone)]
 pub struct GrokClient {
     config: GrokConfig,
     client: reqwest::Client,

@@ -145,6 +145,7 @@ pub struct AnthropicConfig {
 }
 
 /// Anthropic client for generating completions
+#[derive(Clone)]
 pub struct AnthropicClient {
     config: AnthropicConfig,
     client: reqwest::Client,

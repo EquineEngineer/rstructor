@@ -196,6 +196,7 @@ pub struct OpenAIConfig {
 }
 
 /// OpenAI client for generating completions
+#[derive(Clone)]
 pub struct OpenAIClient {
     config: OpenAIConfig,
     client: reqwest::Client,
